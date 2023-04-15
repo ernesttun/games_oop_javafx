@@ -11,6 +11,7 @@ public class Win {
         }
         return result;
     }
+
     public static boolean hor(int[][] board, int row) {
         boolean rsl = true;
         for (int i = 0; i < board.length; i++) {
@@ -21,6 +22,7 @@ public class Win {
         }
         return rsl;
     }
+
     public static boolean ver(int board[][], int column) {
         boolean rsl = true;
         for (int i = 0; i < board.length; i++) {
