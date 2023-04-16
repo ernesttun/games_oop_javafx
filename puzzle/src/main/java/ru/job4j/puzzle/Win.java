@@ -23,14 +23,14 @@ public class Win {
         return result;
     }
 
-    public static boolean ver(int board[][], int column) {
-        boolean rsl = true;
-        for (int i = 0; i < board.length; i++) {
-            if (board[i][column] != 1) {
-                rsl = false;
+    public static boolean ver(int[][] board, int column) {
+        boolean result = true;
+        for (int[] ints : board) {
+            if (ints[column] != 1) {
+                result = false;
                 break;
             }
         }
-        return rsl;
+        return result;
     }
 }
