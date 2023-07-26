@@ -28,7 +28,7 @@ public class LogicTest {
         BishopBlack bishopBlack = new BishopBlack(Cell.C8);
         ImpossibleMoveException exception = assertThrows(ImpossibleMoveException.class,
                 () -> {
-                    logic.move(bishopBlack.position(), Cell.C7);
+                    logic.move(bishopBlack.position(), Cell.C6);
                 });
         assertThat(exception.getMessage()).isEqualTo("Could not way by diagonal from %s to %s", bishopBlack.position(), Cell.C7);
     }
