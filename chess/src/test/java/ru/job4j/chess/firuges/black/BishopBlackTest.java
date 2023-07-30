@@ -43,26 +43,4 @@ class BishopBlackTest {
                 });
         assertThat(exception.getMessage()).isEqualTo("Could not way by diagonal from %s to %s", Cell.C1, Cell.C2);
     }
-
-    @Test
-    public void whenMoveFigureNotFoundException() {
-        Logic logic = new Logic();
-        FigureNotFoundException exception = assertThrows(
-                FigureNotFoundException.class,
-                () -> {
-                    logic.move(null, Cell.F4);
-                });
-        assertThat(exception.getMessage()).isEqualTo("Figure not found on the board.");
-    }
-
-    @Test
-    public void whenMoveOccupiedCellException() {
-        Logic logic = new Logic();
-        OccupiedCellException exception = assertThrows(
-                OccupiedCellException.class,
-                () -> {
-                    logic.move(Cell.C8, Cell.D7);
-                });
-        assertThat(exception.getMessage()).isEqualTo("the cell is occupied");
-    }
 }

@@ -41,7 +41,7 @@ public class LogicTest {
     throws FigureNotFoundException, OccupiedCellException, ImpossibleMoveException {
         Logic logic = new Logic();
         BishopBlack black = new BishopBlack(Cell.C1);
-        PawnBlack pawnBlack = new PawnBlack(Cell.E3);
+        PawnBlack pawnBlack = new PawnBlack(Cell.F4);
         logic.add(black);
         logic.add(pawnBlack);
         OccupiedCellException exception = assertThrows(OccupiedCellException.class,
