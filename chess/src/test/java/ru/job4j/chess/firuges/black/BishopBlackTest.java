@@ -41,6 +41,7 @@ class BishopBlackTest {
                 () -> {
                     black.way(Cell.C2);
                 });
-        assertThat(exception.getMessage()).isEqualTo("Could not way by diagonal from %s to %s", Cell.C1, Cell.C2);
+        assertThat(exception.getMessage())
+                .isEqualTo("Could not way by diagonal from %s to %s", Cell.C1, Cell.C2);
     }
 }
